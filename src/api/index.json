@@ -1,0 +1,129 @@
+{
+    "menu": {
+        "comida": [
+            {
+                "id": 1,
+                "nombre": "Hamburguesa",
+                "descripcion": "Rica hamburguesa con carne y queso",
+                "precio": 90,
+                "imagen": "https://i2.wp.com/www.cuponerapp.com/guia/wp-content/uploads/2018/01/hamburguesa.jpg?w=1000&ssl=1"
+            },
+            {
+                "id": 2,
+                "nombre": "FIDEO SECO A LOS 3 CHILES CON CAMARONES",
+                "descripcion": "Servido con aguacate, crema y queso canasto.",
+                "precio": 150
+            },
+            {
+                "id": 3,
+                "nombre": "FILETE DE ROBALO NEGRO",
+                "descripcion": "Horneado con ceniza de verduras. Acompañado de ensaladita de elote, pimiento y cebolla con un toque de chutney de dátil",
+                "precio": 220
+            },
+            {
+                "id": 4,
+                "nombre": "PULPO A LAS BRASAS",
+                "descripcion": "Marinado en pimentón. Servido con papa parrillada",
+                "precio": 300
+            },
+            {
+                "id": 5,
+                "nombre": "CAPRESE",
+                "descripcion": "Frescas rodajas de jitomate, queso mozzarella, aceituna negra y albahaca. Con aderezo de albahaca.",
+                "precio": 100
+            },
+            {
+                "id": 6,
+                "nombre": "TÁRTARA DE ATÚN",
+                "descripcion": "",
+                "precio": 80
+            },
+            {
+                "id": 7,
+                "nombre": "SOPA DE TORTILLA",
+                "descripcion": "",
+                "precio": 50
+            },
+            {
+                "id": 8,
+                "nombre": "PICANHA",
+                "descripcion": "Corte típico brasileño con enorme sabor. Servido con papas a la francesa",
+                "precio": 120
+            },
+            {
+                "id": 9,
+                "nombre": "SOPA FRIA DE AGUACATE",
+                "descripcion": "Sin crema y acompañada de queso panela al lado.",
+                "precio": 90
+            },
+            {
+                "id": 10,
+                "nombre": "FIDEO SECO A LOS 3 CHILES CON CAMARONES",
+                "descripcion": "Servido con aguacate, crema y queso canasto.",
+                "precio": 90
+            },
+            {
+                "id": 11,
+                "nombre": "RAVIOLES TALEGGIO",
+                "descripcion": "Rellenos de queso taleggio, salvia, salseados con mantequilla, vino tinto, col berza, hongo crimini y piñón.",
+                "precio": 150
+            },
+            {
+                "id": 12,
+                "nombre": "FETTUCCINE HINDÚ",
+                "descripcion": "Media pechuga de pollo marinada en semilla de cilantro y jengibre con salsa de yogurt, crema cebolla y un toque de chile piquin. Servida sobre pasta fresca.",
+                "precio": 140
+            },
+            {
+                "id": 13,
+                "nombre": "LASAGNA DE CARNE",
+                "descripcion": "Con salsa de jitomate, especias y queso.",
+                "precio": 110
+            },
+            {
+                "id": 14,
+                "nombre": "Verduras a la Parrilla",
+                "descripcion": "",
+                "precio": 70
+            },
+            {
+                "id": 15,
+                "nombre": "Espárragos",
+                "descripcion": "",
+                "precio": 110
+            }
+        ],
+        "bebida": [
+            {
+                "id": 1,
+                "nombre": "Coca cola",
+                "descripcion": "Refresco cocacola de 600ml",
+                "precio": 25
+            },
+            {
+                "id": 2,
+                "nombre": "Jugo de naranja",
+                "descripcion": "",
+                "precio": 30
+            },
+            {
+                "id": 2,
+                "nombre": "Jugo de frutas",
+                "descripcion": "",
+                "precio": 30
+            },
+            {
+                "id": 2,
+                "nombre": "Licuado de platano",
+                "descripcion": "Licuado de platano con chocomilk",
+                "precio": 20
+            },
+            {
+                "id": 4,
+                "nombre": "Cerveza",
+                "descripcion": "",
+                "precio": 30
+            }
+        ]
+    }
+}

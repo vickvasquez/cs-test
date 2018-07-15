@@ -1,0 +1,3 @@
+export const FETCH_MENU = 'FETCH_MENU'
+export const DATA_FULFILLED = 'DATA_FULFILLED'
+export const ADD_COMMANDA = 'ADD_COMMANDA'
