@@ -1,5 +1,5 @@
 import { menu } from '../api'
-import { dataFulfilled } from './actions'
+import { dataFulfilled } from '.'
 
 export default () => (dispatch) => {
     dispatch(dataFulfilled(menu))

@@ -6,91 +6,120 @@
                 "nombre": "Hamburguesa",
                 "descripcion": "Rica hamburguesa con carne y queso",
                 "precio": 90,
-                "imagen": "https://i2.wp.com/www.cuponerapp.com/guia/wp-content/uploads/2018/01/hamburguesa.jpg?w=1000&ssl=1"
+                "imagen": "https://i2.wp.com/www.cuponerapp.com/guia/wp-content/uploads/2018/01/hamburguesa.jpg?w=1000&ssl=1",
+                "agregado":false
             },
             {
                 "id": 2,
                 "nombre": "FIDEO SECO A LOS 3 CHILES CON CAMARONES",
                 "descripcion": "Servido con aguacate, crema y queso canasto.",
-                "precio": 150
+                "precio": 150,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnC-rdXLwz3cJNDgsYDRruCIHZVz0mFTZOKiGc7_6Snv_4QKhx",
+                "agregado":false
             },
             {
                 "id": 3,
                 "nombre": "FILETE DE ROBALO NEGRO",
                 "descripcion": "Horneado con ceniza de verduras. Acompañado de ensaladita de elote, pimiento y cebolla con un toque de chutney de dátil",
-                "precio": 220
+                "precio": 220,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhGe_KfWk23xkVmumFnzH8x4Eyk2z1hebITFpjHZ2oaEdOuq9pQ",
+                "agregado":false
             },
             {
                 "id": 4,
                 "nombre": "PULPO A LAS BRASAS",
                 "descripcion": "Marinado en pimentón. Servido con papa parrillada",
-                "precio": 300
+                "precio": 300,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04G2Vcv5l0wG2f9cOTa4kERC9GUT3jGWO7pGvaP4Ijpj2ZkcfQA",
+                "agregado":false
             },
             {
                 "id": 5,
                 "nombre": "CAPRESE",
                 "descripcion": "Frescas rodajas de jitomate, queso mozzarella, aceituna negra y albahaca. Con aderezo de albahaca.",
-                "precio": 100
+                "precio": 100,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4GSor8WZA1JjkgxajQ5neZMLhIjcNxDhJQ_fXSBnpRATdlzE",
+                "agregado":false
             },
             {
                 "id": 6,
                 "nombre": "TÁRTARA DE ATÚN",
                 "descripcion": "",
-                "precio": 80
+                "precio": 80,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Z1Ied-0I2TOdfB08j-iDTUWtjzwOm7YE2BuCDabCVGx417yDQA",
+                "agregado":false
             },
             {
                 "id": 7,
                 "nombre": "SOPA DE TORTILLA",
                 "descripcion": "",
-                "precio": 50
+                "precio": 50,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMT5rFw06ilYkwlvZIQiSV4qcXD6wIXi4qey4gxIgPkF9JLU5cKw",
+                "agregado":false
             },
             {
                 "id": 8,
                 "nombre": "PICANHA",
                 "descripcion": "Corte típico brasileño con enorme sabor. Servido con papas a la francesa",
-                "precio": 120
+                "precio": 120,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwsLutRojdeFLk5u1NZ_QJw9cR2WWEseWb7dI4xD6aNCg9eE1HA",
+                "agregado":false
             },
             {
                 "id": 9,
                 "nombre": "SOPA FRIA DE AGUACATE",
                 "descripcion": "Sin crema y acompañada de queso panela al lado.",
-                "precio": 90
+                "precio": 90,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpO0v6wZVulvRo70y_KHKhJ7Fls6ZbNznyqp2l7OxJf0YunHpH",
+                "agregado":false
             },
             {
                 "id": 10,
                 "nombre": "FIDEO SECO A LOS 3 CHILES CON CAMARONES",
                 "descripcion": "Servido con aguacate, crema y queso canasto.",
-                "precio": 90
+                "precio": 90,
+                "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkGqzkmxhKaH6cCFZjdLDGt8E6j99lA8LVchnlQh3CRdi59iI",
+                "agregado":false
             },
             {
                 "id": 11,
                 "nombre": "RAVIOLES TALEGGIO",
                 "descripcion": "Rellenos de queso taleggio, salvia, salseados con mantequilla, vino tinto, col berza, hongo crimini y piñón.",
-                "precio": 150
+                "precio": 150,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShQSpy71ZyyTd-h0a6-AQBhQ4751pTcYbyCb8vg-d96-h1U7Z",
+                "agregado":false
             },
             {
                 "id": 12,
                 "nombre": "FETTUCCINE HINDÚ",
                 "descripcion": "Media pechuga de pollo marinada en semilla de cilantro y jengibre con salsa de yogurt, crema cebolla y un toque de chile piquin. Servida sobre pasta fresca.",
-                "precio": 140
+                "precio": 140,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TFwx236jN__FZEMrkGUW0ygyam6B1Q9jeYVCKbXK7J-ZRFIt",
+                "agregado":false
             },
             {
                 "id": 13,
                 "nombre": "LASAGNA DE CARNE",
                 "descripcion": "Con salsa de jitomate, especias y queso.",
-                "precio": 110
+                "precio": 110,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBSIwKeir6V-njvN5wU4VclQTsVrKI3PFPgGuFaV6fOBXfhnzXA",
+                "agregado":false
             },
             {
                 "id": 14,
                 "nombre": "Verduras a la Parrilla",
                 "descripcion": "",
-                "precio": 70
+                "precio": 70,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQ4cF4jK2MXOYz-J-14dZe5TcTKAS3TzuyhEHjKCG9SUT7Img",
+                "agregado":false
             },
             {
                 "id": 15,
                 "nombre": "Espárragos",
                 "descripcion": "",
-                "precio": 110
+                "precio": 110,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhwj-FG34bDnhJwUMk6YSJIdtJUpjzGRgqtAFvpF3ZG_UCbCp",
+                "agregado":false
             }
         ],
         "bebida": [
@@ -98,31 +127,41 @@
                 "id": 1,
                 "nombre": "Coca cola",
                 "descripcion": "Refresco cocacola de 600ml",
-                "precio": 25
+                "precio": 25,
+                "imagen":"",
+                "agregado":false
             },
             {
                 "id": 2,
                 "nombre": "Jugo de naranja",
                 "descripcion": "",
-                "precio": 30
+                "precio": 30,
+                "imagen":"",
+                "agregado":false
             },
             {
                 "id": 2,
                 "nombre": "Jugo de frutas",
                 "descripcion": "",
-                "precio": 30
+                "precio": 30,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi9PHw-ZGqCvKpIRGnT-4irNPGYaW3EsK4tiYk0-051StfDrSj",
+                "agregado":false
             },
             {
                 "id": 2,
                 "nombre": "Licuado de platano",
                 "descripcion": "Licuado de platano con chocomilk",
-                "precio": 20
+                "precio": 20,
+                "imagen":"",
+                "agregado":false
             },
             {
                 "id": 4,
                 "nombre": "Cerveza",
                 "descripcion": "",
-                "precio": 30
+                "precio": 30,
+                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoPR6Vw4kL-gnkJkqkTTqNX44MrqTRfGJVxpfwR31NpluSh6GZg",
+                "agregado":false
             }
         ]
     }

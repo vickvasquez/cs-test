@@ -1,11 +1,16 @@
 import { connect } from 'react-redux'
+import { addProduct } from 'actions/'
 import Menu from './Menu'
 
 const mapStateToProps = (state) => {
-    const { data } = state.menu
+    const { menu } = state
 
     return {
-        data,
+        menu,
     }
 }
-export default connect(mapStateToProps)(Menu)
+
+const maDispatchToprops = dispatch => ({
+    addProduct: produc => dispatch(addProduct(produc)),
+})
+export default connect(mapStateToProps, maDispatchToprops)(Menu)
