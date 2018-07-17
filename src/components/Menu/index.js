@@ -1,3 +1,3 @@
-import CardMenu from './CardMenu'
+import CardMenu from './Card'
 
 export default CardMenu

@@ -1,5 +1,10 @@
 import {
-    FETCH_MENU, ADD_COMMANDA, DATA_FULFILLED, ADD_PRODUCT, REMOVE_PRODUCT,
+    FETCH_MENU,
+    ADD_COMMANDA,
+    DATA_FULFILLED,
+    ADD_PRODUCT,
+    REMOVE_PRODUCT,
+    ADD_QUANTY,
 } from './constants'
 
 export const fetchData = () => ({
@@ -11,7 +16,7 @@ export const dataFulfilled = payload => ({
     payload,
 })
 
-export const addComanda = payload => ({
+export const addCommanda = payload => ({
     type: ADD_COMMANDA,
     payload,
 })
@@ -21,7 +26,16 @@ export const addProduct = payload => ({
     payload,
 })
 
-export const removeProduct = payload => ({
+export const removeProduct = id => ({
     type: REMOVE_PRODUCT,
-    payload,
+    id,
+})
+
+export const addQuanty = product => ({
+    type: ADD_QUANTY,
+    product,
+})
+
+export const toggleMenu = type => ({
+    type,
 })
