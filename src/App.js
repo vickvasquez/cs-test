@@ -1,10 +1,7 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import fetchData from 'actions/actionCreator'
 import store from './store'
-import Menu from './containers/Menu'
-
-store.dispatch(fetchData())
+import Menu from './containers'
 
 const App = () => (
     <Provider store={store}>

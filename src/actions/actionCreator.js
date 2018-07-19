@@ -1,6 +1,18 @@
 import { menu } from '../api'
-import { dataFulfilled } from '.'
+import { dataFulfilled, addCommanda, addedCommandaSuccess } from '.'
 
-export default () => (dispatch) => {
-    dispatch(dataFulfilled(menu))
+const newCommanda = (cart) => dispatch => {
+    dispatch(addCommanda(cart))
+    dispatch(addedCommandaSuccess())
+}
+
+const fetchData = () => (dispatch) => {
+    setTimeout(() => {
+        dispatch(dataFulfilled(menu))
+    }, 500)
+}
+
+export {
+    newCommanda,
+    fetchData,
 }

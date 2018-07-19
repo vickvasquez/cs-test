@@ -121,48 +121,6 @@
                 "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhwj-FG34bDnhJwUMk6YSJIdtJUpjzGRgqtAFvpF3ZG_UCbCp",
                 "agregado":false
             }
-        ],
-        "bebida": [
-            {
-                "id": 1,
-                "nombre": "Coca cola",
-                "descripcion": "Refresco cocacola de 600ml",
-                "precio": 25,
-                "imagen":"",
-                "agregado":false
-            },
-            {
-                "id": 2,
-                "nombre": "Jugo de naranja",
-                "descripcion": "",
-                "precio": 30,
-                "imagen":"",
-                "agregado":false
-            },
-            {
-                "id": 2,
-                "nombre": "Jugo de frutas",
-                "descripcion": "",
-                "precio": 30,
-                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi9PHw-ZGqCvKpIRGnT-4irNPGYaW3EsK4tiYk0-051StfDrSj",
-                "agregado":false
-            },
-            {
-                "id": 2,
-                "nombre": "Licuado de platano",
-                "descripcion": "Licuado de platano con chocomilk",
-                "precio": 20,
-                "imagen":"",
-                "agregado":false
-            },
-            {
-                "id": 4,
-                "nombre": "Cerveza",
-                "descripcion": "",
-                "precio": 30,
-                "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoPR6Vw4kL-gnkJkqkTTqNX44MrqTRfGJVxpfwR31NpluSh6GZg",
-                "agregado":false
-            }
         ]
     }
 }

@@ -1,29 +1,29 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-    Columns, Container, Heading, Navbar, Button,
+    Columns, Heading, Loader
 } from 'react-bulma-components'
 import CardMenu from 'components/Menu'
 import Products from 'containers/Products'
-import Comandas from 'containers/Comandas'
 
 const propTypes = {
     addProduct: PropTypes.func.isRequired,
     removeProduct: PropTypes.func.isRequired,
-    showCommands: PropTypes.bool.isRequired,
-    menu: PropTypes.oneOfType(PropTypes.array, PropTypes.bool).isRequired,
+    menu: PropTypes.objectOf(PropTypes.oneOfType([
+            PropTypes.array,
+            PropTypes.bool,
+        ])).isRequired,
 }
 
 class Menu extends Component {
+    componentDidMount = () => {
+        const { fetchData } = this.props
+        fetchData()
+    }
+
     handleAdd = (product) => {
         const { addProduct } = this.props
         addProduct(product)
-    }
-
-    handleRemove = (id) => {
-        const { removeProduct } = this.props
-
-        removeProduct(id)
     }
 
     toggleMenu = (type) => {
@@ -32,66 +32,40 @@ class Menu extends Component {
     }
 
     render() {
-        const { menu: { comida }, showCommands } = this.props
+        const { menu: { comida, loading } } = this.props
         return (
-            <div className="main">
-                <Navbar>
-                    <Navbar.Menu>
-                        <Navbar.Container>
-                            <Navbar.Item>
-                                <Button onClick={
-                                    () => {
-                                        this.toggleMenu('HIDE_COMMANDS')
-                                    }
-                                }
-                                >
-                        Menu
-                                </Button>
-
-                            </Navbar.Item>
-                            <Navbar.Item>
-                                <Button onClick={() => { this.toggleMenu('SHOW_COMMANDS') }}>
-                                Comandas
-                                </Button>
-
-                            </Navbar.Item>
-                        </Navbar.Container>
-                    </Navbar.Menu>
-                </Navbar>
-                <Container fluid>
-                    {
-                        showCommands ? <Comandas />
-                            : (
-                                <React.Fragment>
-
-                                    <Heading> Menu </Heading>
+            <React.Fragment>
+                {
+                    loading ?
+                        <React.Fragment>
+                            <p className="loader-override"> Cargando datos.. </p>
+                            <Loader  style={{margin: '0 auto'}}/>
+                        </React.Fragment>
+                        :
+                        <React.Fragment>
+                            <Heading> Menu </Heading>
+                            <Columns>
+                                <Columns.Column size={8}>
                                     <Columns>
-                                        <Columns.Column size={8}>
-                                            <Columns>
-                                                {
-                                                    comida.map(card => (
-                                                        <Columns.Column size={4}>
-                                                            <CardMenu
-                                                                key={card.id}
-                                                                {...card}
-                                                                handleAdd={this.handleAdd}
-                                                                handleRemove={this.handleRemove}
-                                                            />
-                                                        </Columns.Column>
-                                                    ))
-                                                }
-                                            </Columns>
-                                        </Columns.Column>
-                                        <Columns.Column>
-                                            <Heading size={5}> Platillos escogidos </Heading>
-                                            <Products />
-                                        </Columns.Column>
+                                        {
+                                            comida.map(card => (
+                                                <Columns.Column size={4} key={card.id}>
+                                                    <CardMenu
+                                                        {...card}
+                                                        handleAdd={this.handleAdd}
+                                                    />
+                                                </Columns.Column>
+                                            ))
+                                        }
                                     </Columns>
-                                </React.Fragment>
-                            )
-                    }
-                </Container>
-            </div>
+                                </Columns.Column>
+                                <Columns.Column>
+                                    <Products />
+                                </Columns.Column>
+                            </Columns>
+                        </React.Fragment>
+                }
+            </React.Fragment>
         )
     }
 }

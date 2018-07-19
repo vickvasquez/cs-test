@@ -14,7 +14,7 @@ const Commandas = ({ commandas: { data } }) => (
         <Columns>{
             data.length
                 ? data.map((comanda, index) => (
-                    <Columns.Column size={6}>
+                    <Columns.Column size={6} key={comanda.id}>
                         <Card>
                             <Card.Content>
                                 <Heading size={3}>Comanda {(index + 1)}</Heading>
@@ -23,7 +23,7 @@ const Commandas = ({ commandas: { data } }) => (
                         </Card>
                     </Columns.Column>
                 ))
-                : ''
+                : <p style={{margin: '0 auto'}}> No se encontró ninguna comanda</p>
         }
         </Columns>
     </React.Fragment>

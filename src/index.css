@@ -9,8 +9,21 @@ body {
 }
 
 .products {
+    border: 1px solid #ccc;
+    padding: 1rem;
     position: fixed;
     right:3.5rem;
-    border: 1px solid #ccc;
     width: 30%;
+}
+
+.image img {
+    height: 190px !important;
+}
+
+.loader-override {
+    text-align: center;
+}
+
+.navbar {
+    background: transparent !important;
 }

@@ -1,44 +1,59 @@
 import React, { Component } from 'react'
 import {
-    Table, Button,
+    Table, Heading, Button,
 } from 'react-bulma-components'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 import PropTypes from 'prop-types'
+
 
 const propTypes = {
     cart: PropTypes.arrayOf(PropTypes.object).isRequired,
     removeProduct: PropTypes.func.isRequired,
-    addQuanty: PropTypes.func.isRequired,
+    downQuanty: PropTypes.func.isRequired,
+    // upQuanty: PropTypes.func.isRequired,
     addCommanda: PropTypes.func.isRequired,
 }
 
 class Products extends Component {
+    componentWillReceiveProps = (nextProps) => {
+        if(nextProps.loading === false) {
+            toast.success('Se ha agregado correctamente')
+        }
+    }
     handleRemove = (id) => {
         const { removeProduct } = this.props
-
-        removeProduct(id)
+        // eslint-disable-next-line
+        if (confirm('Estas apunto de eliminar este platillo ¿ Deseas continuar?')) { removeProduct(id) }
     }
 
     handleQuantity = (product) => {
-        const { addQuanty } = this.props
-        addQuanty(product)
+        const { downQuanty } = this.props
+        downQuanty(product)
     }
 
-    handleAddCommand = (product) => {
+    handleAddCommand = (cart) => {
         const { addCommanda } = this.props
 
-        addCommanda(product)
+        // eslint-disable-next-line
+        if (confirm('¿ Datos correctos ?')) {
+            addCommanda(cart)
+        }
     }
+/*
+    upQuanty = (id) => {
+        const { upQuanty } = this.props
+
+        upQuanty(id)
+    } */
 
     render() {
         const { cart } = this.props
-        const styleInput = {
-            borderRadius: '5px',
-            border: '1px solid #ccc',
-            padding: '.5rem',
-            width: '40%',
-        }
+
         return (
             <div className="products">
+                <Heading size={5}> Platillos escogidos </Heading>
+                <ToastContainer />
                 <Table>
                     <tbody>
                         {
@@ -46,22 +61,31 @@ class Products extends Component {
                                 <tr key={product.id}>
                                     <td>{product.nombre}</td>
                                     <td>
-                                        <input
-                                            style={styleInput}
-                                            type="text"
-                                            defaultValue={product.cantidad}
-                                            onKeyPress={(e) => {
-                                                if (e.keyCode === 13 || e.which === 13) {
-                                                    this.handleQuantity({
-                                                        id: product.id,
-                                                        cantidad: e.target.value,
-                                                    })
-                                                }
-                                            }}
-                                        />
+                                        {product.cantidad}
                                     </td>
                                     <td>
-                                        <Button color="danger" onClick={() => { this.handleRemove(product.id) }}>
+                                        <Button
+                                            outlined
+                                            disabled={product.cantidad <=1}
+                                            color="primary"
+                                            onClick={() => { this.handleQuantity(product.id)}}
+                                        >
+                                            Restar
+                                        </Button>
+                                    </td>
+                                    <td>
+                                    { /*
+                                        <Button
+                                            outlined
+                                            color="primary"
+                                            onClick={() => { this.upQuanty(product.id)}}
+                                        >
+                                            Agregar
+                                        </Button> */
+                                    }
+                                    </td>
+                                    <td>
+                                        <Button outlined color="danger" onClick={() => { this.handleRemove(product.id) }}>
                                         Eliminar
                                         </Button>
                                     </td>
